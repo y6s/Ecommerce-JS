@@ -1,0 +1,252 @@
+/*Presentacion*/
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&family=Source+Serif+Pro:wght@200&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 200;
+    color: black;
+    background-color: white;
+    font-size: 17px;
+}
+/*header*/
+.page_cont{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 500;
+}
+h3{
+  font-size: 26px;
+  color:black;
+}
+.navbar{
+  display: flex;
+  list-style: none;
+ justify-content: center;
+ transition: all 200ms ease-in;
+ color:black;
+ padding-top: 20px;
+}
+.navbar li{
+  margin: 0 10px;
+  font-size: 14px;
+}
+.navbar  a{
+  color:black;
+}
+nav ul li a:hover{
+  color: blue;
+}
+.fas{
+  position: relative;
+  left: 79rem;
+    bottom: 2rem;
+}
+.submenu{
+  position: relative;
+}
+.submenu #carrito{
+  display: none;
+}
+.submenu:hover #carrito{
+  display: block;
+  position: absolute;
+  right:0;
+
+  top:100%;
+  z-index: 1;
+  background-color: white;
+  padding: 20px;
+  min-height: 400px;
+  min-width: 300px;
+}
+th,
+td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #E1E1E1; }
+th:first-child,
+td:first-child {
+  padding-left: 0; }
+th:last-child,
+td:last-child {
+  padding-right: 0; }
+
+
+.container{
+  margin:0 50px;
+}
+.cont{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img{
+  width: 31%;
+  margin: 0 6px;
+}
+.container__title{
+  position: relative;
+    font-size: 27px;
+    font-style: italic;
+    right: 2rem;
+    top: 4rem;
+    font-weight: 300;
+}
+.container__title h1{
+  font-weight: 500;
+}
+.meme{
+  width: 60%;
+    margin-left: 96px;
+    font-size: 19px;
+}
+.btn-primary{
+  background: none;
+  margin: 20px;
+  padding: 20px 40px;
+  font-size: 27px;
+  font-weight: bold;
+  background-color: black;
+  color: white;
+  border:1px solid black;
+  cursor:pointer;
+  
+}
+/*INDEX*/
+.landing{
+  padding:67px 58px 70px 62px;
+    background-color:#FDF1FA; 
+}
+.landing_uno{
+  width:58%;
+}
+.landing_uno h2{
+  margin-bottom: 10px;
+    font-family: 'Source Serif Pro', serif;
+    font-size: 45px;
+    font-family: none;
+}
+/* Compras */
+.compras__cont{
+  margin: 57px;
+}
+.compras__cont_pack{
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-between;
+  margin: 0 13rem;
+}
+.compras__cont_uno{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: black;
+}
+.compras__cont_uno h3{
+  font-size: 16px;
+  margin-top: 12px;
+}
+.compras_jpg{
+  width:250px;
+}
+.agregar-carrito{
+  padding:10px;
+  box-shadow: white;
+  font-family:'Noto Sans KR', sans-serif; 
+  background-color: white;
+  font-weight: 900;
+  cursor: pointer;
+  margin-top: 10px;
+  border: 1px solid black;
+}
+/*footer*/
+.footer{
+  background-color: black;
+  color: white;
+  font-size: 14px;
+  padding: 55px;
+}
+.footer__div{
+  display: flex;
+}
+.footer__bebe{
+  align-self: center;
+}
+.footer__bebe h1{
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.footer__p{
+  width:86%;
+}
+input {
+  border-style: solid;
+  padding: 13px;
+  background-color: black;
+  -moz-appearance: button;
+  font-family: 'Noto Sans KR', sans-serif;
+  margin-top: 15px;
+  color: white;
+  border-radius: revert;
+  border-block-color: white;
+  width: 60%;
+}
+.footer_img{
+  display: flex;
+    justify-content: flex-end;
+}
+.bebito{
+  display: grid;
+  margin: 0 10px;
+  text-decoration: underline;
+}
+.bebito a{
+  margin-top: 18px;
+  justify-self: center;
+  color: white;
+}
+.first-circle{
+  border-radius: 80%;
+    width: 180px;
+    height: 200px;
+    margin: 0 10px;
+}
+.footer__list{
+  display: flex;
+    font-size: 13px;
+    margin-top: 10rem;
+    justify-content: flex-end;
+}
+.footer__cero ul{
+  list-style: none;
+  margin:0 50px;
+}
+.footer__cero p{
+  color: grey;
+  margin:0 0 5px 50px;
+}
+.footer__cero a{
+  color:white;
+}
+.footer__rights{
+  list-style: none;
+  font-size: 13px;
+  margin:30px;
+}
+.footer__rights_li{
+  display:flex;
+  text-decoration-line: underline;
+}
+.footer__rights_li a{
+  color:white;
+  margin: 0 10px;
+}
