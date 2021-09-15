@@ -4,12 +4,16 @@ const contenedorCarrito = document.querySelector('#lista-carrito tbody');
 const listaProductos = document.querySelector('#lista-productos');
 const vaciarCarritoBtn= document.querySelector('#vaciar-carrito');
 
+
 let articulosCarrito = []
 
 
 listaProductos.addEventListener('click', agregarProducto);
 carrito.addEventListener('click', eliminarProducto);
 vaciarCarritoBtn.addEventListener('click',vaciarCarrito);
+
+
+
 
 document.addEventListener('DOMContentLoaded', () => {
     articulosCarrito= JSON.parse(localStorage.getItem('carrito')) || [];
@@ -53,6 +57,8 @@ function obtenerDatosProducto(producto) {
         id: producto.querySelector('a').getAttribute('data-id'),
         cantidad: 1
     }
+    //agregado recien
+   
 
     const existe = articulosCarrito.some( producto=> producto.id === productoAgregado.id)
    
@@ -74,7 +80,8 @@ function obtenerDatosProducto(producto) {
         //Agregar al carrito un prod que no estaba  antes
         articulosCarrito = [...articulosCarrito, productoAgregado]
         //articuloscarrito.push(productoAgregado);
-    }
+        //RECIEN
+    } 
 
     insertarCarritoHTML();
     //console.log(articulosCarrito);
@@ -88,16 +95,17 @@ function insertarCarritoHTML() {
         const row = document.createElement('tr');
         row.innerHTML = `
         <td> 
-            <img src="${imagen}" width=90>
+            <img src="${imagen}" width=70>
         </td>  
         <td>
-            ${nombre}
+            ${nombre} 
             </td>
         <td>
             ${precio}
         </td>
         <td>
             ${cantidad}
+            
         </td>
         <td> 
             <a href="#" class="borrar-producto" data-id="${id}"> X  </a> 
@@ -121,4 +129,5 @@ function borrarHTML(){
        }
    }
 
+ 
  

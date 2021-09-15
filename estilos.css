@@ -47,24 +47,45 @@ nav ul li a:hover{
   position: relative;
   left: 79rem;
     bottom: 2rem;
+    
+}
+#i-carrito{
+  cursor:pointer;
+}
+#lista-carrito{
+  font-size: 13px;
+  border: 10px;
+  border-color: black;
 }
 .submenu{
   position: relative;
+  
 }
 .submenu #carrito{
   display: none;
+  
+}
+#vaciar-carrito {
+	pointer-events: auto;
+	cursor: pointer;
+	background: #FDF1FA;
+	border-radius: 30px;
+	padding: 0.5rem 1rem;
+  position: relative;
+	display: inline-block;
+  font-size: 14px;
 }
 .submenu:hover #carrito{
   display: block;
   position: absolute;
   right:0;
-
   top:100%;
   z-index: 1;
   background-color: white;
   padding: 20px;
-  min-height: 400px;
-  min-width: 300px;
+  min-height: 100px;
+  min-width: 100px;
+  
 }
 th,
 td {
@@ -113,9 +134,9 @@ td:last-child {
   padding: 20px 40px;
   font-size: 27px;
   font-weight: bold;
-  background-color: black;
+  background-color: #cdebf9;
   color: white;
-  border:1px solid black;
+  border:1px solid white;
   cursor:pointer;
   
 }
@@ -141,7 +162,7 @@ td:last-child {
   display: flex;
   flex-flow: wrap;
   justify-content: space-between;
-  margin: 0 13rem;
+  /*margin: 0 13rem; */
 }
 .compras__cont_uno{
   display: flex;
